@@ -14,7 +14,7 @@ const Input = ({ label, type, name, value, onChange, placeholder, className='' }
         <div className="mb-4">
             {label && <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={name}>{label}</label>}
             <input
-                className={`rounded py-2 px-3 w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 ${className}`}
+                className={`rounded-none py-2 px-3 w-full border border-black bg-transparent focus:outline-none focus:ring-1 focus:ring-black ${className}`}
                 id={name}
                 type={type}
                 name={name}

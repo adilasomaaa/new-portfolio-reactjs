@@ -8,7 +8,7 @@ const Button = ({ children, className, ...props }: ButtonProps) => {
     return (
             <button
                 {...props}
-                className={`${className || ''} cursor-pointer bg-gray-500 hover:bg-gray-600 py-2 px-6 rounded-lg transition-colors `}
+                className={`${className || ''} cursor-pointer hover:bg-gray-800 py-2 px-6 rounded-none transition-colors font-mono uppercase text-sm disabled:opacity-50`}
             >
                 {children}
             </button>

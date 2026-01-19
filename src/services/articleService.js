@@ -1,5 +1,5 @@
 import { db } from '../config/firebase';
-import { collection, getDocs, query, orderBy, addDoc, serverTimestamp, getDoc, where, limit, doc, updateDoc, increment } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, addDoc, serverTimestamp, getDoc, where, limit, doc, updateDoc, increment, deleteDoc } from 'firebase/firestore';
 
 const articlesCollectionRef = collection(db, 'articles');
 
@@ -27,13 +27,13 @@ export const getAllArticles = async () => {
 };
 
 const slugify = (text) => {
-  return text
-    .toString()
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')           // Ganti spasi dengan -
-    .replace(/[^\w\-]+/g, '')       // Hapus karakter yang tidak valid
-    .replace(/\-\-+/g, '-');        // Ganti beberapa -- dengan satu -
+    return text
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')           // Ganti spasi dengan -
+        .replace(/[^\w\-]+/g, '')       // Hapus karakter yang tidak valid
+        .replace(/\-\-+/g, '-');        // Ganti beberapa -- dengan satu -
 };
 
 export const addArticle = async (articleData) => {

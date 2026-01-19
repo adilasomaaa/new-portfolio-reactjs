@@ -134,6 +134,7 @@ const Form = () => {
         try {
             const articleData = {
                 title: formData.title,
+                slug: formData.title.toLowerCase().replace(/\s+/g, '-'),
                 description: formData.description,
             };
             
@@ -167,37 +168,38 @@ const Form = () => {
   return (
     <>
         <form onSubmit={handleSubmit}>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center mb-8 border-b border-black pb-4'>
             <div>
-                <Link to={"/dashboard/blog"} className="text-gray-500 mb-8">Back</Link>
+                <Link to={"/dashboard/blog"} className="text-black hover:underline font-mono text-xs uppercase tracking-widest mb-4 inline-block">&larr; Back to Index</Link>
                 {/* Judul dinamis berdasarkan mode */}
-                <div className='text-xl sm:text-2xl lg:text-[44px] font-light text-left'>
-                {isEditMode ? 'Edit Blog' : 'Add Blog'}
+                <div className='text-3xl sm:text-4xl font-serif font-bold text-left mt-2'>
+                {isEditMode ? 'Edit Article' : 'New Article'}
                 </div>
-                <p className='text-gray-600 '>
-                {isEditMode ? 'Update your existing blog' : 'Add a new blog'}
+                <p className='text-gray-600 font-sans mt-1'>
+                {isEditMode ? 'Update your existing blog post.' : 'Create a new entry for your blog.'}
                 </p>
             </div>
             <Button type="submit" className='text-white' disabled={loading}>
-                {loading ? 'Saving...' : 'Save'}
+                {loading ? 'PUBLISHING...' : 'PUBLISH'}
             </Button>
             </div>
-            <div className="mt-6">
-                <div className="mb-4">
+            <div className="mt-6 max-w-4xl">
+                <div className="mb-6">
                     <Input
                         name="title"
-                        label="Title"
+                        label="Headline"
                         type="text"
                         id="title"
                         value={formData.title}
                         onChange={handleChange}
-                        placeholder="Enter blog title"
+                        placeholder="Enter a catchy headline..."
+                        className="font-serif text-lg"
                         required/>
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="description" className='block text-sm font-medium text-gray-700 mb-1'>Description</label>
-                    <div className="h-64 mb-12"> 
-                         <div ref={editorRef} className="h-full"></div>
+                    <label htmlFor="description" className='block text-lg font-serif font-bold text-black mb-2'>Content Body</label>
+                    <div className="h-[500px] mb-12 border border-black p-1 bg-white"> 
+                         <div ref={editorRef} className="h-[445px]!"></div>
                     </div>
                 </div>
             </div>
