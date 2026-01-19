@@ -1,0 +1,17 @@
+[
+    {
+        "name": "GitHub",
+        "url": "https://github.com/adilasomaa",
+        "icon": "FaGithub"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/yasdil-lasoma/",
+        "icon": "FaLinkedin"
+    },
+    {
+        "name": "Instagram",
+        "url": "https://instagram.com/adilasoma",
+        "icon": "FaInstagramSquare" 
+    }
+]

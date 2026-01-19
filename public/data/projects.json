@@ -1,0 +1,171 @@
+[
+    {
+        "id": 1,
+        "name": "SIDAPRO FSB UNG",
+        "company": "FSB UNG",
+        "year": "2022",
+        "role": [
+            "Frontend Developer"
+        ],
+        "image": "sidapro.png",
+        "desc": "Application that can manage the administrative process for students and lecturers regarding the submission of thesis titles to the judiciary.",
+        "link": "https://sidapro.fsb.ung.ac.id/"
+    },
+    {
+        "id": 2,
+        "name": "SIATU PPG UNG",
+        "company": "PPG UNG",
+        "year": "2022",
+        "role": [
+            "Frontend Developer"
+        ],
+        "image": "siatu.png",
+        "desc": "Application that can manage the registration process, scheduling, and learning for PPG students.",
+        "link": "https://ppg.siat.ung.ac.id/"
+    },
+    {
+        "id": 3,
+        "name": "Pusat Data Fakultas FSB UNG",
+        "company": "FSB UNG",
+        "year": "2023",
+        "role": [
+            "Backend Developer"
+        ],
+        "image": "pdf.png",
+        "desc": "Application that can collect faculty data for lecturer and student accreditation purposes.",
+        "link": "https://pdf.fsb.ung.ac.id/"
+    },
+    {
+        "id": 4,
+        "name": "EMPATHY",
+        "company": "GEMASTIK ",
+        "year": "2023",
+        "role": [
+            "Fullstack Developer"
+        ],
+        "image": "empathy.png",
+        "desc": "Application that makes it easy to order ambulances effectively and efficiently using the voice recording method.",
+        "link": "#"
+    },
+    {
+        "id": 5,
+        "name": "Sistem Informasi Geografis Desa",
+        "company": "Desa Molingkapoto Selatan",
+        "year": "2021",
+        "role": [
+            "Fullstack Developer"
+        ],
+        "image": "webdesa.png",
+        "desc": "Application that makes it easier for villages to publish village activities and is equipped with GIS features to display certain maps.",
+        "link": "https://gmm-molsel.com/"
+    },
+    {
+        "id": 6,
+        "name": "WebGis KKN Destana",
+        "company": "Kecamatan Bulawa",
+        "year": "2024",
+        "role": [
+            "Project Manager"
+        ],
+        "image": "gistana.png",
+        "desc": "Application that displays data on evacuation routes and gathering points for each village in Bulawa District.",
+        "link": "https://gistana.github.io/"
+    },
+    {
+        "id": 7,
+        "name": "Hivisitscreen",
+        "company": "-",
+        "year": "2024",
+        "role": [
+            "Project Manager"
+        ],
+        "image": "hivisit.png",
+        "desc": "Application to make it easier to order HIV screening and several other medical features.",
+        "link": "https://hivisitscreen.id/"
+    },
+    {
+        "id": 8,
+        "name": "RistiApp",
+        "company": "UKM Risti UNG",
+        "year": "2023",
+        "role": [
+            "Fullstack Developer"
+        ],
+        "image": "hivisit.png",
+        "desc": "Application to make it easier to having an information about UKM Risti UNG.",
+        "link": "https://risti.ung.ac.id/"
+    },
+    {
+        "id": 9,
+        "name": "Gorontalo Satu Data",
+        "company": "BAPPPEDA Provinsi Gorontalo",
+        "year": "2024",
+        "role": [
+            "Backend Developer"
+        ],
+        "image": "gsd.png",
+        "desc": "Application to make it easier to having an information about UKM Risti UNG.",
+        "link": "#"
+    },
+    {
+        "id": 10,
+        "name": "GoVillage",
+        "company": "Bangkit Digital Gorontalo",
+        "year": "2025",
+        "role": [
+            "Backend Developer",
+            "Project Manager"
+        ],
+        "image": "govillage.png",
+        "desc": "Application designed to digitize village administration and public services to enhance efficiency and accessibility for rural communities.",
+        "link": "demo.go-village.id"
+    },
+    {
+        "id": 11,
+        "name": "SINERGI",
+        "company": "Bapppeda Provinsi Gorontalo",
+        "year": "2025",
+        "role": [
+            "Fullstack Developer"
+        ],
+        "image": "sinergi.png",
+        "desc": "Application that facilitates regional development planning through Working Paper (Kertas Kerja) features with real-time SIPD integration.",
+        "link": "#"
+    },
+    {
+        "id": 12,
+        "name": "SIH3",
+        "company": "Bapppeda Provinsi Gorontalo",
+        "year": "2025",
+        "role": [
+            "Backend Developer"
+        ],
+        "image": "sih3.png",
+        "desc": "Integrated platform for Hydrology, Hydrogeology, and Hydrometeorology Information System (SIH3) that facilitates water resource data management in collaboration with PUPR, River Basin Organization, and BMKG.",
+        "link": "#"
+    },
+    {
+        "id": 13,
+        "name": "E-Commerce Kotamobagu",
+        "company": "-",
+        "year": "2025",
+        "role": [
+            "Fullstack Developer"
+        ],
+        "image": "ecommerce.jpeg",
+        "desc": "E-commerce platform specifically designed for Kotamobagu city to empower local MSMEs and facilitate digital transactions for regional products.",
+        "link": "#"
+    },
+    {
+        "id": 14,
+        "name": "Dinul Islam - Digital Lettering",
+        "company": "Universitas Muhammadiyah Gorontalo",
+        "year": "2026",
+        "role": [
+            "Fullstack Developer"
+        ],
+        "image": "dilettering.jpeg",
+        "desc": "Digital lettering application designed to streamline administrative correspondence and document management for the Dinul Islam program at Universitas Muhammadiyah Gorontalo.",
+        "link": "#"
+    }
+]

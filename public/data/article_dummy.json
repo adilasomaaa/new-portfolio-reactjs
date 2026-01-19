@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Understanding JavaScript Closures",
+        "slug": "understanding-javascript-closures",
+        "author": "Jane Doe",
+        "date": "2023-01-15",
+        "content": "A closure is the combination of a function and the lexical environment within which that function was declared..."
+    },
+    {
+        "id": 2,
+        "title": "A Guide to Responsive Web Design",
+        "slug": "guide-to-responsive-web-design",
+        "author": "John Smith",
+        "date": "2023-02-10",
+        "content": "Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes..."
+    },
+    {
+        "id": 3,
+        "title": "Introduction to React Hooks",
+        "slug": "introduction-to-react-hooks",
+        "author": "Alice Johnson",
+        "date": "2023-03-05",
+        "content": "React Hooks are functions that let you use state and other React features without writing a class..."
+    }
+]

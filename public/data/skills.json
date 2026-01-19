@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Fullstack Developer",
+        "description": "Experience with both frontend and backend development using technologies like Laravel, NodeJS and databases.",
+        "icon": "FaCode",
+        "items": [
+            {
+                "name": "Laravel",
+                "description": "Experienced in building robust web applications using Laravel framework.",
+                "icon": "FaLaravel",
+                "value": 95,
+                "duration": "3 years",
+                "keywords": ["PHP", "ERD", "MVC", "Eloquent ORM", "RESTful APIs", "Blade Templating"]
+            },
+            {
+                "name": "VueJS",
+                "description": "Proficient in creating dynamic user interfaces with VueJS framework.",
+                "icon": "FaVuejs",
+                "value": 90,
+                "duration": "2 years",
+                "keywords": ["Javascript", "Vue Router", "Composition API", "Single Page Applications"]
+            },
+            {
+                "name": "NestJS",
+                "description": "Skilled in building scalable server-side applications using NestJS framework.",
+                "icon": "FaNodeJs",
+                "value": 80,
+                "duration": "1 year",
+                "keywords": ["TypeScript", "Express", "RESTful APIs", "Microservices", "Dependency Injection"]
+            },
+            {
+                "name": "ReactJS",
+                "description": "Experienced in building interactive UIs with ReactJS library.",
+                "icon": "FaReact",
+                "value": 80,
+                "duration": "1 year",
+                "keywords": ["JavaScript", "JSX", "Hooks", "State Management", "React Router"]
+            },
+            {
+                "name": "Database Management",
+                "description": "Proficient in designing and managing databases using MySQL and PostgreSQL.",
+                "icon": "FaDatabase",
+                "value": 90,
+                "duration": "3 years",
+                "keywords": ["SQL", "Database Design", "ERD", "Normalization", "Backup & Recovery"]
+            },
+            {
+                "name": "Version Control",
+                "description": "Experienced in using Git for version control and collaboration.",
+                "icon": "FaGitAlt",
+                "value": 90,
+                "duration": "3 years",
+                "keywords": ["Git", "GitHub", "Branching", "Merging", "Pull Requests", "Code Reviews"]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Project Manager",
+        "description": "Skilled in managing projects, coordinating teams, and ensuring timely delivery of high-quality software solutions.",
+        "icon": "FaProjectDiagram",
+        "items": [
+            {
+                "name": "Agile Methodologies",
+                "description": "Proficient in Agile practices including Scrum and Kanban for efficient project management.",
+                "icon": "FaCog",
+                "value": 85,
+                "duration": "1 years",
+                "keywords": ["Scrum", "Kanban", "JIRA", "Trello", "Confluence", "Sprint Planning"]
+            },
+            {
+                "name": "Team Leadership",
+                "description": "Experienced in leading and motivating development teams to achieve project goals.",
+                "icon": "FaUsers",
+                "value": 80,
+                "duration": "1 years",
+                "keywords": ["Team Building", "Conflict Resolution", "Mentoring", "Communication", "Collaboration"]
+            },
+            {
+                "name": "Management Tools",
+                "description": "Using modern tools like Notion and GitHub to manage project workflows, track tasks, and facilitate team collaboration.",
+                "icon": "FaTasks",
+                "value": 85,
+                "duration": "1 years",
+                "keywords": ["Notion", "GitHub Projects", "Task Tracking", "Workflow Management", "Agile Boards"]
+            }
+        ]
+    }
+]

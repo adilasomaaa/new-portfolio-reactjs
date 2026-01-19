@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Arsy Dev Creative",
+        "role": [
+            "Frontend Developer"
+        ],
+        "startDate": "August 2022",
+        "endDate": null
+    },
+    {
+        "id": 2,
+        "name": "BPSDM Kominfo",
+        "role": [
+            "Backend Developer Intern"
+        ],
+        "startDate": "September 2024",
+        "endDate": "December 2024"
+    },
+    {
+        "id": 3,
+        "name": "Timedoor Academy Gorontalo",
+        "role": [
+            "Coding Mentor"
+        ],
+        "startDate": "September 2024",
+        "endDate": "Januari 2026"
+    },
+    {
+        "id": 4,
+        "name": "Bangkit Digital Gorontalo",
+        "role": [
+            "Backend Developer",
+            "Project Manager"
+        ],
+        "startDate": "January 2025",
+        "endDate": "July 2025"
+    },
+    {
+        "id": 5,
+        "name": "Bapppeda Provinsi Goorntalo",
+        "role": [
+            "Programmer"
+        ],
+        "startDate": "September 2025",
+        "endDate": "Desember 2025"
+    },
+    {
+        "id": 6,
+        "name": "Universitas Muhammadiyah Gorontalo",
+        "role": [
+            "Programmer"
+        ],
+        "startDate": "January 2026",
+        "endDate": null
+    }
+]
