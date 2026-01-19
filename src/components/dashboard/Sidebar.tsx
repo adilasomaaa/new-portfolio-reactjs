@@ -1,4 +1,4 @@
-import { VscAccount, VscArchive, VscBriefcase, VscHome, VscRocket } from 'react-icons/vsc';
+import { VscHome, VscRocket } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -9,24 +9,6 @@ const Sidebar = () => {
                 type: 'anchor', 
                 to: 'dashboard' 
             },
-            // { 
-            //     label: 'Skills', 
-            //     icon: <VscAccount size={18} />, 
-            //     type: 'anchor', 
-            //     to: 'skills' 
-            // },
-            // { 
-            //     label: 'Work Experiences', 
-            //     icon: <VscBriefcase size={18} />, 
-            //     type: 'anchor', 
-            //     to: 'works' // Contoh link eksternal
-            // },
-            // { 
-            //     label: 'Projects', 
-            //     icon: <VscArchive size={18} />, 
-            //     type: 'anchor', 
-            //     to: 'projects' // Contoh link eksternal
-            // },
             { 
                 label: 'Blog', 
                 icon: <VscRocket size={18} />, 
