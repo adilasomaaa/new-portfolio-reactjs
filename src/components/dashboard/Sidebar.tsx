@@ -7,26 +7,26 @@ const Sidebar = () => {
                 label: 'Home', 
                 icon: <VscHome size={18} />, 
                 type: 'anchor', 
-                to: 'home' 
+                to: 'dashboard' 
             },
-            { 
-                label: 'Skills', 
-                icon: <VscAccount size={18} />, 
-                type: 'anchor', 
-                to: 'skills' 
-            },
-            { 
-                label: 'Work Experiences', 
-                icon: <VscBriefcase size={18} />, 
-                type: 'anchor', 
-                to: 'works' // Contoh link eksternal
-            },
-            { 
-                label: 'Projects', 
-                icon: <VscArchive size={18} />, 
-                type: 'anchor', 
-                to: 'projects' // Contoh link eksternal
-            },
+            // { 
+            //     label: 'Skills', 
+            //     icon: <VscAccount size={18} />, 
+            //     type: 'anchor', 
+            //     to: 'skills' 
+            // },
+            // { 
+            //     label: 'Work Experiences', 
+            //     icon: <VscBriefcase size={18} />, 
+            //     type: 'anchor', 
+            //     to: 'works' // Contoh link eksternal
+            // },
+            // { 
+            //     label: 'Projects', 
+            //     icon: <VscArchive size={18} />, 
+            //     type: 'anchor', 
+            //     to: 'projects' // Contoh link eksternal
+            // },
             { 
                 label: 'Blog', 
                 icon: <VscRocket size={18} />, 

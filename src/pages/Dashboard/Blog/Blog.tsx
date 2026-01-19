@@ -42,12 +42,15 @@ const Blog = () => {
     <>
     <div className="flex justify-between items-center">
         <div>
-            <div id="projects" className='text-xl sm:text-2xl lg:text-[44px] font-light text-left'>Manage Blog</div>
+            <div id="projects" className='font-serif text-xl sm:text-2xl lg:text-[44px] font-light text-left'>Manage Blog</div>
             <p className='text-gray-600 '>You can manage your blog here</p>
         </div>
-        <div>
+        <div className='flex gap-2'>
+            <Link to={"/blog"}>
+              <Button className='text-black bg-white border border-black hover:bg-black hover:text-white'>See Blog</Button>
+            </Link>
             <Link to={"/dashboard/blog/create"}>
-              <Button className='text-white'>Add</Button>
+              <Button className='text-white bg-black border border-black'>Add</Button>
             </Link>
         </div>
     </div>
