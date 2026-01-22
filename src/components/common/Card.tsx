@@ -5,9 +5,9 @@ interface CardProps {
   className?: string;
 }
 
-const Card = ({ children, className = '' }: CardProps) => {
+const Card = ({ children, className }: CardProps) => {
   return (
-    <div className={`${className} bg-paper p-6 border border-black `}>
+    <div className={`bg-paper p-6 border border-black ${className || ''}`}>
       {children}
     </div>
   );

@@ -50,8 +50,9 @@ const Login = () => {
     <>
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <div className="w-full md:w-[400px] flex flex-col items-center">
-                <h2 className="text-4xl font-semibold mb-4">Stay in the Loop</h2>
-                <h2 className="text-4xl mb-8">Sign In Now</h2>
+                <h2 className="text-xl font-serif">Sign In Now</h2>
+                <h2 className="text-4xl font-semibold mb-4 text-black font-serif border-b pb-4">Stay in the Loop</h2>
+                
                     <form onSubmit={handleLogin} className='w-full'>
                         {message &&
                             <Message
@@ -80,7 +81,7 @@ const Login = () => {
                                 placeholder="Enter your Password"/>
                         </div>
                         <div className="flex items-center justify-between">
-                            <Button type="submit" className='text-white w-full' disabled={loading}>
+                            <Button type="submit" className='bg-black text-white w-full' disabled={loading}>
                                 { loading ? `Loading...` : `Sign In`}
                             </Button>
                         </div>
