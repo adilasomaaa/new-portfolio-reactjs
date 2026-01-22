@@ -66,18 +66,14 @@ const Form = () => {
     useEffect(() => {
         if (loading || !editorRef.current) return;
 
-        // Cleanup existing instance if any (though usually handled by return)
-        if (quillRef.current) {
-             // If we are here, it means loading changed but component didn't unmount?
-             // Safer to just always create new if we rely on cleanup.
-             // But strict mode might cause double run.
-             // Let's rely on the check:
-             const container = editorRef.current;
-             // Check if already initialized to avoid double init in Strict Mode
-             if (container.querySelector('.ql-editor')) return;
-        }
+        // Reset the container to be sure we don't duplicate
+        editorRef.current.innerHTML = '';
+        
+        // Create a dedicated div for the editor
+        const editorContainer = document.createElement('div');
+        editorRef.current.appendChild(editorContainer);
 
-        const quill = new Quill(editorRef.current, {
+        const quill = new Quill(editorContainer, {
             theme: 'snow',
             modules: {
                 toolbar: [
@@ -85,12 +81,17 @@ const Form = () => {
                         ['bold', 'italic', 'underline', 'strike'],
                         [{ 'list': 'ordered'}, { 'list': 'bullet' }],
                         ['link', 'image'],
-                        ['clean'] // remove formatting button
+                        ['clean'] 
                 ]
             }
         });
 
         quillRef.current = quill;
+
+        // Set initial content if available
+        if (formData.description) {
+            quill.clipboard.dangerouslyPasteHTML(formData.description);
+        }
 
         quill.on('text-change', () => {
                 const content = quill.root.innerHTML || '';
@@ -100,7 +101,9 @@ const Form = () => {
         // Cleanup function
         return () => {
             quillRef.current = null; 
-            // We don't necessarily need to destroy the DOM since React will remove the div
+            if (editorRef.current) {
+                editorRef.current.innerHTML = '';
+            }
         };
     }, [loading]);
 

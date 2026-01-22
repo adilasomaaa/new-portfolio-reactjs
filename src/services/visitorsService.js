@@ -3,18 +3,42 @@ import { collection, addDoc, serverTimestamp, getDocs, query, orderBy, Timestamp
 
 const visitorsCollectionRef = collection(db, 'visitors');
 
+const fetchCountryConfig = [
+    {
+        url: 'https://ipapi.co/json/',
+        field: 'country_name'
+    },
+    {
+        url: 'https://ipwho.is/',
+        field: 'country'
+    },
+    {
+        url: 'https://api.db-ip.com/v2/free/self',
+        field: 'countryName'
+    }
+];
+
+const getCountry = async () => {
+    for (const provider of fetchCountryConfig) {
+        try {
+            const response = await fetch(provider.url);
+            if (!response.ok) continue;
+
+            const data = await response.json();
+            const country = data[provider.field];
+
+            if (country) return country;
+        } catch (e) {
+            console.warn(`Failed to fetch country from ${provider.url}`, e);
+            continue;
+        }
+    }
+    return 'Unknown';
+}
+
 export const trackVisitor = async (pageInfo) => {
     try {
-        let country = 'Unknown';
-        try {
-            const response = await fetch('https://ipapi.co/json/');
-            const data = await response.json();
-            if (data && data.country_name) {
-                country = data.country_name;
-            }
-        } catch (e) {
-            console.warn('Could not fetch country data', e);
-        }
+        const country = await getCountry();
 
         const visitorData = {
             ...pageInfo,
