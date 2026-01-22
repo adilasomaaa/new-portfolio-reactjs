@@ -38,6 +38,10 @@ const Blog = () => {
   
   return (
     <div className='py-20 px-6 md:px-32 max-w-5xl mx-auto'>
+      <Helmet>
+          <title>Adi's Journal</title>
+          <meta name="description" content="Engineering, design, and stories." />
+        </Helmet>
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-gray-100 pb-6">
         <div>
           <h1 className='text-3xl md:text-5xl font-serif font-light text-gray-900 mb-2'>Adi's Journal</h1>
