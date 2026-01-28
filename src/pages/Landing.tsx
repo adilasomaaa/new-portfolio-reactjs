@@ -12,7 +12,7 @@ const Landing = () => {
     <>
       <Helmet>
         <title>Yasdil Lasoma - Portfolio</title>
-        <meta name="description" content="Portfolio of Yasdil Lasoma - Software Engineer" />
+        <meta name="description" content="Fullstack Developer with expertise in React, Node.js, and modern web technologies. Explore my projects, work experience, and technical skills in software engineering." />
       </Helmet>
           <Hero/>
           <Skills/>
