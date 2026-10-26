@@ -1,0 +1,34 @@
+name: Auto Deploy Vue to Hostinger
+
+on:
+  push:
+    branches:
+      - main # atau master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '26.2.0' # Sesuaikan dengan versi Node.js Anda
+
+      - name: Install & Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Upload hasil build ke Hostinger
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "dist/*"
+          target: "/home/u601591909/domains/dkmart.id/public_html"
+          strip_components: 1
